@@ -32,7 +32,7 @@ class QuickSort{
         }
     }
     public static void main(String args[]){
-        int[] arr = {6, 3, 9, 5, 2, 8};
+        int[] arr = {6,2,6,5,1,2};
         int n = arr.length;
         quickSort(arr, 0, n-1);  
         for(int i=0; i<n; i++){
