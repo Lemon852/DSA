@@ -1,4 +1,5 @@
-class defangIPaddr{
+package Problems;
+class Main{
     public static String defangIPaddr(String address) {
         String newString = "";
         for(int i=0; i<address.length(); i++){

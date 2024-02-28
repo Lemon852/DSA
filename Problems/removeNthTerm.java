@@ -1,3 +1,7 @@
+package Problems;
+
+import LinkedList.ListNode;
+
 class Solution{
     public ListNode removeNthNode(ListNode head, int n){
         if(head.next == null){

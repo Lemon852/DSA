@@ -1,3 +1,4 @@
+package Problems;
 class Solution {
     public static int[] intToArr(int num){
         int count = (int) Math.log10(num)+1;
@@ -19,7 +20,6 @@ class Solution {
         return intToArr(num);
     }
     public static void main(String[] args){
-        Solution solution = new Solution();
         int[] arr = {9,8,7,6,5,4,3,2,1,0};
         arr = plusOne(arr);
         for(int i =0; i<arr.length; i++){

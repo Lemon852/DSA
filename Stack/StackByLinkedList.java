@@ -1,3 +1,5 @@
+package Stack;
+
 public class StackByLinkedList{
     static class Node{
         Node next;

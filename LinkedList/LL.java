@@ -1,4 +1,4 @@
-import java.util.*;
+package LinkedList;
 class LL{
     Node head;
     class Node{

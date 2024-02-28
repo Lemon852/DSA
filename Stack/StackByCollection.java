@@ -1,3 +1,6 @@
+package Stack;
+
+
 import java.util.*;
 public class StackByCollection {
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
-class main{
-    
+package Sorting;
+class QuickSort{
     
     public static int partition(int[] arr, int low, int high){
         int pivot = arr[high];
@@ -24,7 +24,6 @@ class main{
     }
     public static void quickSort(int[] arr, int low, int high){
         if(low<high){  // only sort 
-            int pivot = arr[high];  //starting pivot element as last element
             int pidx = partition(arr, low,high); // secondary function for fragments after pivot
             
             quickSort(arr, low, pidx-1); // recurisve call for first lower array
@@ -32,21 +31,12 @@ class main{
             
         }
     }
-    public static int arrayPair(int[] arr){
-        int n = arr.length-1;
-        quickSort(arr, 0, n);
-        int sum =0;
-        for(int i=0; i<=n; i+=2){
-            sum+= arr[i];
-        }
-       return sum;
-    }
-
-    
     public static void main(String args[]){
-       int[] arr = {6,2,6,5,1,2};
-       
-       System.out.print(arrayPair(arr)); 
-        
+        int[] arr = {6,2,6,5,1,2};
+        int n = arr.length;
+        quickSort(arr, 0, n-1);  
+        for(int i=0; i<n; i++){
+            System.out.print(arr[i]+" ");
+        }    
     }
 }
